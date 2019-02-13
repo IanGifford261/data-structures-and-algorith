@@ -7,12 +7,12 @@ CHALLENGE 1
 Write a function that appends ' The end.' to a string, and returns the modified string. The original source string should not be modified.
 
 ------------------------------------------------------------------------------------------------ */
-
 const appendTheEnd = (str) => {
-  // Solution code here...
+  let modStr = str;
+  modStr = `${modStr} The end.`;
+  return modStr;
   return str;
-}
-
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -27,8 +27,8 @@ console.log(a) prints [1, 2, 3, 1]
 ------------------------------------------------------------------------------------------------ */
 
 const appendFirstToLast = (arr) => {
-  // Solution code here...
-}
+  arr.push(arr[0]);
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
