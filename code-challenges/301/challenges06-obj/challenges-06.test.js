@@ -68,11 +68,7 @@ let characters = [
 ]
 
 const totalCharacters = (arr) => {
-  let characResult = 0;
-  arr.forEach(index => {
-    characResult++;
-  });
-  return characResult;
+  return arr.length;
 };
 
 /*------------------------------------------------------------------------------------------------
