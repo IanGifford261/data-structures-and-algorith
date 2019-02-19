@@ -68,8 +68,12 @@ let characters = [
 ]
 
 const totalCharacters = (arr) => {
-  // Solution code here...
-}
+  let characResult = 0;
+  arr.forEach(index => {
+    characResult++;
+  });
+  return characResult;
+};
 
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 3
