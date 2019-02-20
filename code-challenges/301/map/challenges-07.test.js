@@ -23,8 +23,9 @@ Write a function named forEachTwoToThe that produces the same output as your for
 const forEachTwoToThe = (arr) => {
   let forEachArr = [];
   arr.forEach(i => {
-      
+    forEachArr.push(Math.pow(2, i));
   });
+  return forEachArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -34,9 +35,8 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 ------------------------------------------------------------------------------------------------ */
 
 const mapTwoToThe = (arr) => {
-  // Solution code here...
-}
-
+  return arr.map(i => (Math.pow(2, i)));
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -48,7 +48,7 @@ For example: charCode(['h','i']) returns [104, 105].
 ------------------------------------------------------------------------------------------------ */
 
 const charCode = (arr) => {
-  // Solution code here...
+  return arr.map(i => i.charCodeAt());
 };
 
 /* ------------------------------------------------------------------------------------------------
