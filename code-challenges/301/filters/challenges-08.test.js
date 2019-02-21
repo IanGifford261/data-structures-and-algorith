@@ -24,8 +24,8 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 
 
 const filterStringsWithVowels = (arr) => {
-  return arr.filter((val) => {
-    return val.match(/[a|e|i|o|u]/);
+  return arr.filter((vowel) => {
+    return vowel.match(/[a|e|i|o|u]/);
   });
 };
 
@@ -39,7 +39,9 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
- 
+  return arr.filter((value) => {
+    return !forbiddenValues.includes(value);
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
