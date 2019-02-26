@@ -111,7 +111,7 @@ let starWarsData = [{
   eye_color: 'brown',
   birth_year: '19BBY',
   gender: 'female'
-}]
+}];
 
 let findMaleAndFemale = (data) => {
   // Solution code here...
