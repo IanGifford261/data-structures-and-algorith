@@ -23,7 +23,10 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 ------------------------------------------------------------------------------------------------ */
 
 const findHappiness = (arr) => {
-  // Solution code here...
+  return arr.filter((index) => {
+    return index.includes(':)'); 
+    //That stupid smiley face messed with me so much - ian
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -35,7 +38,7 @@ For example, (123) 456-7890 returns 1234567890
 ------------------------------------------------------------------------------------------------ */
 
 const standardizePhoneNumbers = (arr) => {
-  // Solution code here...
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -57,7 +60,9 @@ Write a function named allHappy that takes in an array of strings and returns a 
 ------------------------------------------------------------------------------------------------ */
 
 const allHappy = (arr) => {
-  // Solution code here...
+  return arr.every(index => {
+    return index.includes(':)');
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -67,7 +72,9 @@ Write a function named findAnything that takes in an array of strings, along wit
 ------------------------------------------------------------------------------------------------ */
 
 const findAnything = (arr, target) => {
-  // Solution code here...
+  return arr.filter(index => {
+    return index.includes(target);
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
